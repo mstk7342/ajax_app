@@ -24,7 +24,7 @@ class PostsController < ApplicationController
 
     item = Post.find(params[:id])
     # 更新したレコードの取得し直しのコード
-    render json: { post: items }
+    render json: { post: item }
     # JSON形式（データ）として、checked.jsに返却している
   end
 end
